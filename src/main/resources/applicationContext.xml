@@ -6,7 +6,8 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- Example bean definition -->
-    <bean id = "messageService" class = "com.revature.spring.ioc.MessageService">
+    <bean id = "messageService" class = "com.revature.spring.ioc.MessageService" 
+    init-method="customInitMethod" destroy-method="customDestroyMethod">
         <constructor-arg value = "Hello from Spring Configuration"/>
     </bean>
 

@@ -22,4 +22,12 @@ public void printMessage(){
     System.out.println("Message: "+message);
 }
 
+public void customInitMethod(){
+    System.out.println("Custom init method called");
+}
+
+public void customDestroyMethod(){
+    System.out.println("Custom destroy method called");
+}
+
 }
